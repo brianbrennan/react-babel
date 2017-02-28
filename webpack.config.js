@@ -25,6 +25,10 @@ module.exports = {
                     path.resolve(__dirname, '/node_modules/')
                 ],
                 loaders: ['react-hot-loader', 'babel-loader']
+            },
+            {
+                test: /\.scss$/,
+                loader: 'style-loader!css-loader!sass-loader'
             }
         ]
     },
