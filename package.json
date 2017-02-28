@@ -4,7 +4,8 @@
   "description": "A test project for setting up a react based workflow",
   "main": "app/main/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --history-api-fallback"
   },
   "author": "Brian Brennan",
   "license": "ISC",
@@ -13,14 +14,21 @@
     "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
     "file-loader": "^0.10.1",
     "html-loader": "^0.4.5",
     "html-webpack-plugin": "^2.28.0",
+    "react-hot-loader": "^1.3.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.2"
   }
 }

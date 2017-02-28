@@ -24,7 +24,7 @@ module.exports = {
                 exclude: [
                     path.resolve(__dirname, '/node_modules/')
                 ],
-                loader: 'babel-loader'
+                loaders: ['react-hot-loader', 'babel-loader']
             }
         ]
     },
